@@ -3,24 +3,13 @@
   "name": "Amazon Smart Shopping Strategist",
   "icons": [
     {
-      "src": "/apple-touch-icon.png",
-      "sizes": "180x180",
+      "src": "apple-touch-icon.png",
+      "sizes": "256x256",
       "type": "image/png",
       "purpose": "any"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "sizes": "512x512",
-      "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#FF9900",
   "background_color": "#FFFFFF"
