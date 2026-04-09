@@ -1,17 +1,29 @@
+<!DOCTYPE html>
+<html>
 <head>
   <base href="/">
-  
-  <!-- Meta tag per Apple -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Smart Shopping">
 
-  <!-- Icona (il tuo file 256x256) -->
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Amazon Smart Shopping Strategist">
+
+  <!-- Configurazione Icona Apple 256x256 -->
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-  <!-- Manifest -->
   <link rel="manifest" href="manifest.json">
 
-  <!-- FONDAMENTALE: Non cancellare lo script qui sotto! -->
+  <title>Amazon Smart Shopping Strategist</title>
+
+  <!-- IL MOTORE DELL'APP: Non toccare queste righe -->
   <script src="flutter_bootstrap.js" async></script>
 </head>
+<body>
+  <script>
+    // Caricamento del Service Worker per la PWA
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+</body>
+</html>
