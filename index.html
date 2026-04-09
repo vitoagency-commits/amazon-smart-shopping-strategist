@@ -1,6 +1,28 @@
+<!DOCTYPE html>
+<html>
 <head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Amazon Smart Shopping Strategist">
+
+  <!-- Icone e Manifest (Codice MITICA APPLE) -->
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
   <link rel="manifest" href="/manifest.json">
-</head>
 
+  <title>amazon-smart-shopping-strategist</title>
+
+  <!-- Questo script è fondamentale: senza di questo l'app resta bianca -->
+  <script src="flutter_bootstrap.js" async></script>
+</head>
+<body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+</body>
+</html>
