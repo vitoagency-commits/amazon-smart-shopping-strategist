@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { 
   ShoppingBag, 
@@ -41,7 +41,7 @@ import {
 import { Skeleton } from "@/components/ui/skeleton";
 import { getRecommendations } from "./services/geminiService";
 import { StrategistResponse, AmazonProduct } from "./types";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 export default function App() {
   const [request, setRequest] = useState("");
