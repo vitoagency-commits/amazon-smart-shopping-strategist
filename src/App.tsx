@@ -185,9 +185,10 @@ export default function App() {
         ) : (
           <motion.div
             key="main"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
+            className="flex flex-col min-h-screen"
           >
             {/* Header */}
             <header className="sticky top-0 z-50 w-full border-b bg-white/90 backdrop-blur-md">
